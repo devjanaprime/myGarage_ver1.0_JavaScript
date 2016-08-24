@@ -22,12 +22,12 @@ The Car Object
 0.7-1.0 - update your styling and consider what else can be done with this. Have some fun with it!
 
 A few possible things you could consider:
-* remove a car on a button click
-* edit a car
-* the look of the input fields (maybe look into using a form? Sounds like an interesting idea)
 * styling/look of the page overall
+* the look of the input fields (maybe look into using a form? Sounds like an interesting idea)
 * display the info for the cars differently
 * show how many cars are in the garage
 * only 1 car showed at a time with "next"/"previous" buttons that carousel through the cars in the garage
+* remove a car option
+* edit a car option
 
 Even if you don't know how to do any of these atm, consider how you think they COULD be accomplished. If you are feeling industrious, you could do a little research and give it a shot! Break off a branch in which to experiment and don't hesitate to try new things.
