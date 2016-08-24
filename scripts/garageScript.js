@@ -20,20 +20,14 @@ var addCar = function( year, make, model, picURL, description ){
 
 var showCars = function(){
   console.log( 'in showCars');
-  // write each record of the array to an ul element on dom with id "carsOut"
-  // empty carsOut ul
+  // updated to display better info for the cars than just an ul
+  // empty carsOut div (was a ul in previous versions)
   document.getElementById( 'carsOut' ).innerHTML = '';
   // for each car in the garage array, add a list item with it's text
   for( var i = 0; i < myGarage.length; i++ ){
-    // create a new list item
-    var listItem = document.createElement( 'li' );
-    // assemble text for the current car
-    var carInfo = myGarage[ i ].year + ' ' + myGarage[ i ].make + ' ' + myGarage[ i ].model + ': ' + myGarage[ i ].description + ', picURL: ' + myGarage[ i ].picURL;
-    // create text node for text within list item with the car info
-    var textNode = document.createTextNode( carInfo );
-    // append text node to list item
-    listItem.appendChild( textNode );
-    // append list item to ul
-    document.getElementById( 'carsOut' ).appendChild( listItem );
+    // write HTML for this car in a variable
+    var carInfo = '<b>' + myGarage[ i ].year + ' ' + myGarage[ i ].make + ' ' + myGarage[ i ].model + '</b><br />' + myGarage[ i ].description + '<br /><img src="' + myGarage[ i ].picURL + '">';
+    // append html variable to div
+    document.getElementById( 'carsOut' ).innerHTML += carInfo;
   } // end for
 }; // end showCars
